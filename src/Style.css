@@ -1,0 +1,153 @@
+.topnav {
+    overflow: hidden;
+    background-color: #e9e9e9;
+  }
+  .topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 25px;
+  }
+  .topnav input[type=text] {
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 17px;
+    margin-right: 16px;
+    font-size: 17px;
+  }  
+  .topnav .back{
+    float: right;
+    padding: 6px;
+   
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 25px;
+  }  
+
+  .video{
+    height:200px;
+    width:300px;
+    border :1px solid;
+    display: inline-block;
+    margin: 20px
+  }
+
+  .app-container {
+    background-color: #F8F8FF;
+    height: 100vh;
+    padding: 10px;
+  }
+
+  .app-container > .movie-grid{
+    display: flex;
+    padding: 10px;
+    flex-wrap: wrap;
+    padding: auto;
+    padding: 10px auto;
+    position: relative;
+    z-index: 2;
+    }
+    .app-container > .movie-grid >.img{
+        position: absolute;
+        top: 0;
+        left:0;
+        width: 100%;
+        height: 100%;
+   
+    opacity: 0.4;
+    z-index: -1;
+    background-image: url("/img/3.jpg"); 
+    background-repeat: repeat-y;
+    }
+    .app-container >.movie-grid > .movie-card {
+        height: 250px;
+        border: 1px solid black;
+        width: 31%;
+        margin: 10px;
+        display: flex;
+        overflow: hidden;
+    }
+
+    .app-container >.movie-grid > .movie-card > .image-container{
+        width: 40%;
+    }
+    .app-container > .movie-grid > .movie-card > .description{
+        width: 60%;
+        padding: 10px;
+    }
+.header{
+    display: flex;
+    padding: 30px;
+}
+
+.header > div{
+    vertical-align: middle;
+    
+    text-align: center;
+}
+.header > .title{
+width:12%;
+
+}
+.header > .year{
+    width:12%;
+    
+}
+.header > .rating{
+    width:12%;
+    
+}
+.header > .img  {
+    width:12%;
+    
+}
+
+.header > .description{
+    width:52%;
+    
+}
+.container{
+    margin: 3%;;
+}
+.container > iframe{
+    width: 100%;
+    height: 552px;
+}
+.details{
+    background-color:#e9e9e9;
+    position: relative !important;
+    z-index: 2;
+}
+.noMatch{
+    text-align: center;
+   
+    font-size: 40px;
+}
+
+.details >.img{
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+
+opacity: 0.4;
+z-index: -1;
+background-image: url("/img/3.jpg"); 
+background-repeat: repeat-y;
+}
+
+@media only screen and (max-width: 1000px) {
+	.app-container >.movie-grid > .movie-card {
+        height: 250px;
+        border: 1px solid black;
+        width: 45%;
+        margin: 10px;
+        display: flex;
+        overflow: hidden;
+    }
+}
